@@ -4,8 +4,10 @@ const add = function(...args) {
   })
 };
 
-const subtract = function() {
-	
+const subtract = function(...args) {
+	return args.reduce(function (acc, cur){
+    return acc - cur;
+  })
 };
 
 const sum = function() {
